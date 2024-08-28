@@ -5,11 +5,6 @@ const Header = () => {
     <>
       <CssStyle>
         <div className="homepage">
-          <img
-            className="homepage_img"
-            src="./image/city1.51e44d49b1c61434ca07.jpeg"
-            alt=""
-          />
           <div className="navbar">
             <ul className="navbar_listr">
               <li className="navbar_item">

@@ -1,12 +1,11 @@
 import styled from "styled-components";
 export const CssStyle = styled.div`
   & .homepage {
+    background: url(./image/city1.51e44d49b1c61434ca07.jpeg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
     & .homepage_img {
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
     }
     & .navbar {
       & .navbar_listr {
@@ -14,6 +13,8 @@ export const CssStyle = styled.div`
         display: flex;
         justify-content: space-between;
         list-style: none;
+        margin-top: 0px;
+        padding-top: 20px;
         & .navbar_item {
           margin: 0 10px;
           & .navbar_links {
@@ -39,7 +40,6 @@ export const CssStyle = styled.div`
 
       & .header {
         padding-top: 150px;
-        position: absolute;
 
         & .header_name {
           color: #fff;
@@ -93,24 +93,21 @@ export const CssStyle = styled.div`
 
   & .service {
     background: #fce8bd;
-    /* margin-top: 90px; */
-    padding: 30px 0;
-    position: relative;
-    z-index: 1;
     & .container {
       margin: 0 auto;
       max-width: 1140px;
       padding: 0 15px;
       width: 100%;
+      padding-top: 30px;
       & .service_name {
         color: #000;
         font-size: 30px;
         font-weight: 510;
-        opacity: 0.8;
         text-align: center;
         font-family: SF Pro;
         font-style: normal;
         line-height: 136.6%;
+        margin-top: 0px;
       }
       & .service_list {
         display: flex;
