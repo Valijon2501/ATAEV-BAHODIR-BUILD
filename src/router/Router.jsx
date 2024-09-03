@@ -6,6 +6,7 @@ import Rating from "../build/Rating";
 import Section from "../build/Section";
 import Projectm from "../build/Projectm";
 import Cards from "../build/Cards";
+import Gallery from "../build/Gallery";
 const Router = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const Router = () => {
         <Route path="/box_section" element={<Section />} />
         <Route path="/box_projectm" element={<Projectm />} />
         <Route path="/box_cards" element={<Cards />} />
+        <Route path="/box_gallery" element={<Gallery />} />
       </Routes>
     </>
   );

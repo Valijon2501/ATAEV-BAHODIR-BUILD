@@ -5,6 +5,7 @@ import Rating from "../build/Rating";
 import Section from "../build/Section";
 import Projectm from "../build/Projectm";
 import Cards from "../build/Cards";
+import Gallery from "../build/Gallery";
 
 const About = () => {
   return (
@@ -15,6 +16,7 @@ const About = () => {
       <Section />
       <Projectm />
       <Cards />
+      <Gallery />
     </>
   );
 };

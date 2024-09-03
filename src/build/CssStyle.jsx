@@ -370,4 +370,27 @@ export const CssStyle = styled.div`
       }
     }
   }
+
+  /* ========================Gallery========================== */
+  & .gallery {
+    padding: 30px 0;
+    & .gallery_name {
+      text-align: center;
+      color: #000;
+      font-family: SF Pro;
+      font-style: normal;
+      font-weight: 510;
+      font-size: 22px !important;
+      letter-spacing: 2px;
+      line-height: 28px !important;
+    }
+    & .gallery_list {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(25%, 250px));
+      width: 100%;
+      & .gallery-img {
+        width: 100%;
+      }
+    }
+  }
 `;
