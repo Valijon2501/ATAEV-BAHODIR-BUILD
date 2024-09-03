@@ -393,4 +393,69 @@ export const CssStyle = styled.div`
       }
     }
   }
+
+  /* =================================Main================== */
+
+  & .main {
+    background-image: url(./image/person.a08c2f1a3dd131936290.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 100px;
+    padding-top: 90px;
+    & .swiper {
+      & .swiper_wrapper {
+        & .container {
+          margin: 0 auto;
+          max-width: 1140px;
+          padding: 0 15px;
+          width: 100%;
+          & .main_subname {
+            color: #fff;
+            font-family: SF Pro;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 0.045em;
+            line-height: 28px;
+          }
+          & .main_name {
+            font-family: SF Pro;
+            font-size: 40px;
+            font-weight: 590;
+            line-height: 120%;
+            padding-top: 50px;
+            width: 400px;
+            color: #fff;
+            font-style: normal;
+          }
+          & .main_text {
+            font-family: Space Grotesk;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+            padding-bottom: 100px;
+            width: 360px;
+            color: #fff;
+            font-style: normal;
+          }
+          & .main_item {
+            padding-bottom: 10px;
+            & .main_btn {
+              border: 0.720862px solid #fff;
+              border-radius: 35.3223px;
+              color: #fff;
+              font-family: SF Pro;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 510;
+              line-height: 136.6%;
+              padding: 10.0921px 26.6719px;
+              text-decoration: none;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
 `;
