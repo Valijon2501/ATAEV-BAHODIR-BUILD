@@ -7,6 +7,7 @@ import Projectm from "../build/Projectm";
 import Cards from "../build/Cards";
 import Gallery from "../build/Gallery";
 import Main from "../build/Main";
+import Forms from "../build/Forms";
 
 const About = () => {
   return (
@@ -19,6 +20,7 @@ const About = () => {
       <Cards />
       <Gallery />
       <Main />
+      <Forms />
     </>
   );
 };

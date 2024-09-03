@@ -458,4 +458,74 @@ export const CssStyle = styled.div`
       }
     }
   }
+  /* ===============================Forms=================== */
+  & .form {
+    background: #202733;
+    padding: 138px 208px;
+    & .container {
+      margin: 0 auto;
+      max-width: 1140px;
+      padding: 0 15px;
+      width: 100%;
+      background: url(./image/form.03148b23e27804568a88.png);
+      background-size: 100% 100%;
+      padding-bottom: 58px;
+      & .form_name {
+        color: #fff;
+        font-family: SF Pro;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 590;
+        line-height: 137.5%;
+        padding-bottom: 28px;
+        padding-left: 74px;
+        padding-top: 35px;
+        width: 300px;
+      }
+      & .form_list {
+        display: flex;
+        flex-direction: column;
+        padding-left: 74px;
+        & .form_input {
+          background: #d9d9d9;
+          border: none;
+          border-radius: 20px;
+          opacity: 0.99;
+          outline: none;
+          padding: 15px 20px;
+          width: 443px;
+          margin: 10px 0;
+        }
+        & textarea {
+          height: 140px;
+          margin-top: 20px;
+          resize: none;
+          background: #d9d9d9;
+          border: none;
+          border-radius: 20px;
+          opacity: 0.99;
+          outline: none;
+          padding: 15px 20px;
+          width: 443px;
+        }
+        & .form_button {
+          backdrop-filter: blur(8.5px);
+          background: hsla(0, 0%, 100%, 0.3);
+          border: 2px solid hsla(0, 0%, 100%, 0.3);
+          border-radius: 35.3223px;
+          color: #fff;
+          cursor: pointer;
+          font-family: SF Pro;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 510;
+          height: 45px;
+          line-height: 136.6%;
+          margin-top: 30px;
+          transition: 0.3s;
+          width: 231px;
+        }
+      }
+    }
+  }
 `;

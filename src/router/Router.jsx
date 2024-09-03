@@ -8,6 +8,7 @@ import Projectm from "../build/Projectm";
 import Cards from "../build/Cards";
 import Gallery from "../build/Gallery";
 import Main from "../build/Main";
+import Forms from "../build/Forms";
 const Router = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const Router = () => {
         <Route path="/box_cards" element={<Cards />} />
         <Route path="/box_gallery" element={<Gallery />} />
         <Route path="/box_main" element={<Main />} />
+        <Route path="/box_main" element={<Forms />} />
       </Routes>
     </>
   );
