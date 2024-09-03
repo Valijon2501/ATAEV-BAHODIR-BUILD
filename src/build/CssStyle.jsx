@@ -287,4 +287,87 @@ export const CssStyle = styled.div`
       }
     }
   }
+
+  /* ==============================Cards======================= */
+  & .cards {
+    background: #f7f7f7;
+    padding: 50px 0;
+    & .container {
+      margin: 0 auto;
+      max-width: 1140px;
+      padding: 0 15px;
+      width: 100%;
+      & .cards_name {
+        color: #000;
+        font-family: SF Pro;
+        font-style: normal;
+        font-weight: 510;
+        font-size: 22px !important;
+        letter-spacing: 2px;
+        line-height: 28px !important;
+      }
+      & .cards_news {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(2, minmax(350px, 50%));
+        & .cards_list {
+          background: #fbfbfb;
+          border-radius: 24.1212px;
+          box-shadow: 0 3.21616px 33.7697px rgba(0, 0, 0, 0.05);
+          display: flex;
+          margin: 0 auto 50px;
+          & .cards_img {
+            border-bottom-left-radius: 24.1212px;
+            border-top-left-radius: 24.1212px;
+            height: 100%;
+            object-fit: cover;
+            width: 250px;
+          }
+          & .cards_item {
+            padding-left: 16px;
+            padding-right: 10px;
+            padding-top: 20px;
+            & .cards_items {
+              align-items: center;
+              display: flex;
+              & .cards_btn {
+                background: #363f4e;
+                border: 1px solid #363f4e;
+                border-radius: 17.4756px;
+                color: #fff;
+                cursor: pointer;
+                font-family: Helvetica;
+                font-size: 11.2566px;
+                font-style: normal;
+                font-weight: 400;
+                height: 26.21px;
+                line-height: 18px;
+                transition: 0.5s;
+                width: 114.17px;
+              }
+            }
+          }
+          & .cards_names {
+            color: #000;
+            font-family: SF Pro;
+            font-style: normal;
+            font-size: 18px;
+            font-weight: 510;
+            line-height: 22px;
+            opacity: 0.99;
+          }
+          & .cards_text {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            opacity: 0.85;
+            width: 100%;
+            color: #000;
+            font-family: SF Pro;
+            font-style: normal;
+          }
+        }
+      }
+    }
+  }
 `;

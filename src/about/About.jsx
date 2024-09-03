@@ -4,6 +4,7 @@ import Service from "../build/Service";
 import Rating from "../build/Rating";
 import Section from "../build/Section";
 import Projectm from "../build/Projectm";
+import Cards from "../build/Cards";
 
 const About = () => {
   return (
@@ -13,6 +14,7 @@ const About = () => {
       <Rating />
       <Section />
       <Projectm />
+      <Cards />
     </>
   );
 };
