@@ -93,6 +93,7 @@ export const CssStyle = styled.div`
 
   & .service {
     background: #fce8bd;
+    padding-bottom: 50px;
     & .container {
       margin: 0 auto;
       max-width: 1140px;
@@ -264,6 +265,24 @@ export const CssStyle = styled.div`
         gap: 40px;
         grid-template-columns: repeat(2, minmax(350px, 50%));
         & .projectm_cards {
+          & .img_a {
+            background: url(./image/projects.53437eda10adf8ee97f3.webp);
+          }
+          & .img_ab {
+            background: url(./image/project.90d0ad1f2b01cab38a88.webp);
+          }
+          & .img_abc {
+            background: url(./image/prezident.39ffbd8cd3007f491559.webp);
+          }
+          & .img_abcd {
+            background: url(./image/school.40d7b4718a3ea2005b09.webp);
+          }
+          & .img_abcde {
+            background: url(./image/image.55d1ad86051dd5af382b.webp);
+          }
+          & .img_abcdef {
+            background: url(./image/image1.59ddf8dcd5ee2719efdc.webp);
+          }
         }
       }
     }
