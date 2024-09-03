@@ -528,4 +528,69 @@ export const CssStyle = styled.div`
       }
     }
   }
+
+  /* ====================footer================ */
+  & .footer {
+    background: #fce8bd;
+    padding-bottom: 50px;
+    padding-top: 70px;
+    & .container {
+      margin: 0 auto;
+      max-width: 1140px;
+      padding: 0 15px;
+      width: 100%;
+      & .footer_titel {
+        display: flex;
+        justify-content: space-between;
+        & .footer_list {
+          & .footer_sub {
+            display: flex;
+            align-items: center;
+            & .footer_img {
+              width: 120px;
+            }
+          }
+          & .footer_texts {
+            font-size: 22px;
+            width: 100%;
+          }
+          & .footer_lists {
+            & .footer_items {
+              list-style: none;
+              & .footer_links {
+              }
+            }
+          }
+          & .footer_name {
+            color: #000;
+            font-family: SF Pro;
+            font-size: 22px;
+            font-style: normal;
+            line-height: 26px;
+          }
+          & .footer__list {
+            list-style: none;
+            margin: 0 20px;
+            padding-left: 0px;
+            & .footer_item {
+              margin: 15px 0;
+              & .footer_link {
+                display: block;
+                font-weight: 274;
+                opacity: 0.6;
+                padding-bottom: 5px;
+                position: relative;
+                color: #000;
+                font-family: SF Pro;
+                font-size: 22px;
+                font-style: normal;
+                line-height: 26px;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 `;

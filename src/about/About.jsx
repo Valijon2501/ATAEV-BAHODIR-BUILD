@@ -8,6 +8,7 @@ import Cards from "../build/Cards";
 import Gallery from "../build/Gallery";
 import Main from "../build/Main";
 import Forms from "../build/Forms";
+import Footer from "../build/Footer";
 
 const About = () => {
   return (
@@ -21,6 +22,7 @@ const About = () => {
       <Gallery />
       <Main />
       <Forms />
+      <Footer />
     </>
   );
 };

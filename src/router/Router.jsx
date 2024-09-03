@@ -9,6 +9,10 @@ import Cards from "../build/Cards";
 import Gallery from "../build/Gallery";
 import Main from "../build/Main";
 import Forms from "../build/Forms";
+import Footer from "../build/Footer";
+import Projects from "../lokal/Projects";
+import ProjectsHeader from "../lokal/ProjectsHeader";
+import Meetang from "../lokal/Meetang";
 const Router = () => {
   return (
     <>
@@ -22,7 +26,11 @@ const Router = () => {
         <Route path="/box_cards" element={<Cards />} />
         <Route path="/box_gallery" element={<Gallery />} />
         <Route path="/box_main" element={<Main />} />
-        <Route path="/box_main" element={<Forms />} />
+        <Route path="/box_forms" element={<Forms />} />
+        <Route path="/box_footer" element={<Footer />} />
+        <Route path="/box_projects" element={<Projects />} />
+        <Route path="/box_projectsHeader" element={<ProjectsHeader />} />
+        <Route path="/box_meetang" element={<Meetang />} />
       </Routes>
     </>
   );
