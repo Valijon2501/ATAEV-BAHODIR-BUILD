@@ -331,6 +331,9 @@ export const CssStyle = styled.div`
               align-items: center;
               display: flex;
               & .cards_btn {
+                &:hover {
+                  background-color: #fff;
+                }
                 background: #363f4e;
                 border: 1px solid #363f4e;
                 border-radius: 17.4756px;
@@ -555,9 +558,29 @@ export const CssStyle = styled.div`
             width: 100%;
           }
           & .footer_lists {
+            align-items: center;
+            display: flex;
+            list-style: none;
+            margin-left: -55px;
             & .footer_items {
               list-style: none;
               & .footer_links {
+                align-items: center;
+                background: #000;
+                border: 1px solid #000;
+                border-radius: 2240.1px;
+                display: flex;
+                height: 59.14px;
+                justify-content: center;
+                margin: 0 10px;
+                transition: all 0.5s ease-out;
+                width: 57.35px;
+                & .ins {
+                  color: white;
+                }
+                & .fac {
+                  color: white;
+                }
               }
             }
           }

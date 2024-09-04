@@ -1,4 +1,6 @@
 import { CssStyle } from "./CssStyle";
+import { IoLogoInstagram } from "react-icons/io";
+import { MdFacebook } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -20,10 +22,20 @@ const Footer = () => {
                 </p>
                 <ul className="footer_lists">
                   <li className="footer_items">
-                    <a className="footer_links" href=""></a>
+                    <a
+                      className="footer_links"
+                      href="https://www.instagram.com/ataev_bahodir_build/"
+                    >
+                      <IoLogoInstagram className="ins" />
+                    </a>
                   </li>{" "}
                   <li className="footer_items">
-                    <a className="footer_links" href=""></a>
+                    <a
+                      className="footer_links"
+                      href="https://www.facebook.com/profile.php?id=61556409174910"
+                    >
+                      <MdFacebook className="fac" />
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -56,12 +68,20 @@ const Footer = () => {
                 <h3 className="footer_name">Aloqa</h3>
                 <ul className="footer__list">
                   <li className="footer_item">
-                    <a className="footer_link" href="">
+                    <a
+                      className="footer_link"
+                      href="https://T.me/+998992212505"
+                    >
                       +998885222501
                     </a>
                   </li>
                   <li className="footer_item">
-                    <a className="footer_link" href="">
+                    <a
+                      className="footer_link"
+                      href="
+                    https://T.me/+998885222501
+                    "
+                    >
                       +998992212505
                     </a>
                   </li>

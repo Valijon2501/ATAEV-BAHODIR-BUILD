@@ -23,7 +23,7 @@ const ProjectsHeader = () => {
                 </a>
               </li>
               <li className="navbar_item">
-                <a className="navbar_links navbar_name" href="">
+                <a className="navbar_links navbar_name" href="/">
                   <img
                     src="./image/ataev1.a8abd3c374603900fb01.png"
                     alt="foto"

@@ -8,7 +8,7 @@ const Cards = () => {
           <div className="container">
             <h2 className="cards_name">Barcha yangiliklarimiz</h2>
             <div className="cards_news">
-              <div className="cards_list">
+              <div className="cards_list" data-aos="fade-right">
                 <img
                   className="cards_img"
                   src="./image/construction.74a5b49f569267df13c8.jpg"
@@ -33,7 +33,7 @@ const Cards = () => {
                   </p>
                 </div>
               </div>
-              <div className="cards_list">
+              <div className="cards_list" data-aos="fade-left">
                 <img
                   className="cards_img"
                   src="./image/news.91d41923640e2fa9a037.jpg"
@@ -54,7 +54,7 @@ const Cards = () => {
                   </p>
                 </div>
               </div>
-              <div className="cards_list">
+              <div className="cards_list" data-aos="fade-right">
                 <img
                   className="cards_img"
                   src="./image/news2.a6503f342d0d2e748340.jpg"
@@ -72,7 +72,7 @@ const Cards = () => {
                   </p>
                 </div>
               </div>
-              <div className="cards_list">
+              <div className="cards_list" data-aos="fade-left">
                 <img
                   className="cards_img"
                   src="./image/news3.44f09827240dc2fb8309.jpg"

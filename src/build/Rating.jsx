@@ -1,4 +1,5 @@
 import { CssStyle } from "./CssStyle";
+import CountUp from "react-countup";
 
 const Rating = () => {
   return (
@@ -10,25 +11,40 @@ const Rating = () => {
             <div className="rating_tatil">
               <div className="rating_list">
                 <h3 className="rating_number">
-                  <span>120</span> +
+                  <span>
+                    <CountUp end={120} duration={4} />
+                  </span>{" "}
+                  +
                 </h3>
                 <p className="rating_text">Xodimlar soni</p>
               </div>
               <div className="rating_list">
                 <h3 className="rating_number">
-                  <span>43</span> +
+                  <span>
+                    {" "}
+                    <CountUp end={43} duration={8} />
+                  </span>{" "}
+                  +
                 </h3>
                 <p className="rating_text">Ob'ektlar</p>
               </div>
               <div className="rating_list">
                 <h3 className="rating_number">
-                  <span>250</span> +
+                  <span>
+                    {" "}
+                    <CountUp end={250} duration={5} />
+                  </span>{" "}
+                  +
                 </h3>
                 <p className="rating_text">Maxsus jihozlar</p>
               </div>
               <div className="rating_list">
                 <h3 className="rating_number">
-                  <span>2</span> +
+                  <span>
+                    {" "}
+                    <CountUp end={2} duration={12} />
+                  </span>{" "}
+                  +
                 </h3>
                 <p className="rating_text">bozorda 14 yil</p>
               </div>

@@ -23,7 +23,7 @@ const Header = () => {
                 </a>
               </li>
               <li className="navbar_item">
-                <a className="navbar_links navbar_name" href="">
+                <a className="navbar_links navbar_name" href="/">
                   <img
                     src="./image/ataev1.a8abd3c374603900fb01.png"
                     alt="foto"
@@ -62,7 +62,7 @@ const Header = () => {
               <p className="header_text">Hamma narsada a'lo</p>
               <div className="header_modal">
                 <div className="header_title">
-                  <a class="header_btn" href="/">
+                  <a class="header_btn" href="/box_projects">
                     Bizning loyihalarimiz
                   </a>
                 </div>

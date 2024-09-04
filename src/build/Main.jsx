@@ -9,8 +9,10 @@ const Main = () => {
             <div className="swiper_wrapper">
               <div className="container">
                 <p className="main_subname">ATAEV BAHODIR BUILD</p>
-                <h2 className="main_name">ATAEV BAHODIR BUILD</h2>
-                <p className="main_text">
+                <h2 className="main_name" data-aos="fade-up">
+                  ATAEV BAHODIR BUILD
+                </h2>
+                <p className="main_text" data-aos="fade-up">
                   Biz shunchaki loyihalar yaratmaymiz, yangi imkoniyatlar
                   yaratamiz. Davlat miqyosidagi inshootlarni qurish orqali biz
                   kelajakni quryapmiz. Biz atrof-muhit haqida qayg'uramiz:
@@ -19,7 +21,7 @@ const Main = () => {
                   javobgarlikni o'z zimmasiga oladi.
                 </p>
                 <div className="main_item">
-                  <a className="main_btn" href="">
+                  <a className="main_btn" href="/box_meetang">
                     Batafsil bilish
                   </a>
                 </div>
