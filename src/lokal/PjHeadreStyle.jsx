@@ -16,7 +16,7 @@ export const PjHeader = styled.div`
         list-style: none;
         margin-top: 0px;
         padding-top: 20px;
-        & .navbar_item {
+        /* & .navbar_item {
           margin: 0 10px;
           & .navbar_links {
             color: #fce8bd;
@@ -29,6 +29,43 @@ export const PjHeader = styled.div`
             text-decoration: none;
             & img {
               width: 120px;
+            }
+          }
+        } */
+        & .navbar_item {
+          margin: 0 20px;
+          & .navbar_links_navbar_name {
+            & img {
+              width: 120px;
+            }
+          }
+          & img {
+            margin-right: 10px;
+            width: 20px;
+          }
+          & .navbar_links {
+            color: #fff;
+            list-style: none;
+            display: block;
+            padding-bottom: 5px;
+            position: relative;
+            text-decoration: none;
+            &::after {
+              content: "";
+              width: 100%;
+              height: 2px;
+              background-color: #fff;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              border-radius: 2px;
+              transform: scaleX(0);
+              transition: all.5s;
+            }
+            &:hover {
+              &::after {
+                transform: scaleX(1);
+              }
             }
           }
         }

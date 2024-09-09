@@ -4,7 +4,7 @@ const Projectm = () => {
   return (
     <>
       <CssStyle>
-        <div className="projectm">
+        <div className="projectm" id="project">
           <dir className="container">
             <h2 className="projectm_name">Bizning loyihalarimiz</h2>
             <div className="projectm_flex">

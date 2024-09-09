@@ -1,6 +1,15 @@
 import { PjHeader } from "./PjHeadreStyle";
+import React, { useState } from "react";
+import { Dropdown } from "react-bootstrap";
+const tillar = [
+  { name: "English", flag: "/image/usa.png" },
+  { name: "Russian", flag: "/image/russia.png" },
+  { name: "Uzbek", flag: "/image/uzbekistan.png" },
+];
 
 const ProjectsHeader = () => {
+  const [tanlangan, setTanlangan] = useState("English");
+
   return (
     <>
       <PjHeader>
@@ -23,7 +32,7 @@ const ProjectsHeader = () => {
                 </a>
               </li>
               <li className="navbar_item">
-                <a className="navbar_links navbar_name" href="/">
+                <a className="navbar_links_navbar_name" href="/">
                   <img
                     src="./image/ataev1.a8abd3c374603900fb01.png"
                     alt="foto"
@@ -46,9 +55,31 @@ const ProjectsHeader = () => {
                 </a>
               </li>
               <li className="navbar_item">
-                <a className="navbar_links" href="">
+                {/* <a className="navbar_links" href="">
                   Ma'lumotlar
-                </a>
+                </a> */}
+                <Dropdown>
+                  <Dropdown.Toggle variant="success" id="dropdown-basic">
+                    <img
+                      src={tillar.find((item) => item.name === tanlangan).flag}
+                      alt="Flag"
+                      className="flag-icon"
+                    />
+                    {tanlangan}
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    {tillar.map((til) => (
+                      <Dropdown.Item
+                        key={til.name}
+                        onClick={() => setTanlangan(til.name)}
+                      >
+                        <img src={til.flag} alt="Flag" className="flag-icon" />
+                        <span>{til.name}</span>
+                      </Dropdown.Item>
+                    ))}
+                  </Dropdown.Menu>
+                </Dropdown>
               </li>
             </ul>
           </div>

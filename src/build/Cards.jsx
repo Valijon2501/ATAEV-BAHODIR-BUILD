@@ -4,7 +4,7 @@ const Cards = () => {
   return (
     <>
       <CssStyle>
-        <div className="cards">
+        <div className="cards" id="card">
           <div className="container">
             <h2 className="cards_name">Barcha yangiliklarimiz</h2>
             <div className="cards_news">
