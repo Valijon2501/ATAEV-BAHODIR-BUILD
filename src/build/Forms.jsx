@@ -7,7 +7,12 @@ const Forms = () => {
         <div className="form" id="forms">
           <div className="container">
             <h2 className="form_name">Savol, taklif va murojaatlar bormi?</h2>
-            <form action="" class="form_list" data-aos="fade-up">
+            <form
+              action=""
+              class="form_list"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <input
                 placeholder="Ismingiz"
                 type="name"

@@ -10,5 +10,19 @@
     "Hamma narsada a'lo": "Excellent in everything",
     "Bizning loyihalarimiz": "Our projects",
     "Bog'lanish": "Contact us"
+  },
+  "service": {
+    "title": "Our services",
+    "text": "You can get free information from our company's specialists",
+    "text1": "Document processing",
+    "text2": "Repair and maintenance services",
+    "text3": "Team of professionals"
+  },
+  "Rating": {
+    "rating_name": "In our company",
+    "rating_text": "Number of employees",
+    "rating_text1": "Objects",
+    "rating_text2": "Special equipment",
+    "rating_text3": "14 years in the market"
   }
 }

@@ -12,7 +12,7 @@ const Meetang = () => {
           <div className="container">
             <h3 className="meeting_mane">ATAEV BAHODIR BUILD haqida</h3>
             <p className="meeting_title">
-              <a className="meeting_link" href="">
+              <a className="meeting_link" href="/">
                 Bosh sahifa
               </a>
             </p>

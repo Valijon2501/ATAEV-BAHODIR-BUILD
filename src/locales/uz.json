@@ -10,5 +10,20 @@
     "Hamma narsada a'lo": "Hamma narsada a'lo",
     "Bizning loyihalarimiz": "Bizning loyihalarimiz",
     "Bog'lanish": "Bog'lanish"
+  },
+
+  "service": {
+    "title": "Bizning xizmatlarimiz",
+    "text": "Siz kompaniyamiz mutaxassislaridan bepul ma'lumot olishingiz mumkin",
+    "text1": "Hujjatlarni rasmiylashtirish",
+    "text2": "Ta`mirlash tuzatish xizmati",
+    "text3": "Professionallar jamoasi"
+  },
+  "Rating": {
+    "rating_name": "Bizning kompaniyada",
+    "rating_text": "Xodimlar soni",
+    "rating_text1": "Ob'ektlar",
+    "rating_text2": "Maxsus jihozlar",
+    "rating_text3": "bozorda 14 yil"
   }
 }

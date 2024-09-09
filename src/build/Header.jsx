@@ -104,20 +104,20 @@ const Header = () => {
 
             <div className="header">
               <h2 className="header_name">
-              {t("ATAEV")}
+                ATAEV
                 <br />
-                {t("BAHODIR")}
+                BAHODIR BUILD
               </h2>
-              <p className="header_text"> {t("Hamma narsada a'lo")}</p>
+              <p className="header_text"> {t("header.Hamma narsada a'lo")}</p>
               <div className="header_modal">
                 <div className="header_title">
                   <a class="header_btn" href="/box_projects">
-                    {t("Bizning loyihalarimiz")}
+                    {t("header.Bizning loyihalarimiz")}
                   </a>
                 </div>
                 <div className="header_title">
                   <a href="tel:+998974839999" class="header_btn">
-                    {t("Bog'lanish")}
+                    {t("header.Bog'lanish")}
                   </a>
                 </div>
               </div>

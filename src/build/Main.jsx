@@ -9,7 +9,11 @@ const Main = () => {
             <div className="swiper_wrapper">
               <div className="container">
                 <p className="main_subname">ATAEV BAHODIR BUILD</p>
-                <h2 className="main_name" data-aos="fade-up">
+                <h2
+                  className="main_name"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   ATAEV BAHODIR BUILD
                 </h2>
                 <p className="main_text" data-aos="fade-up">

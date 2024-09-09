@@ -1,13 +1,15 @@
+import { useTranslation } from "react-i18next";
 import { CssStyle } from "./CssStyle";
 import CountUp from "react-countup";
 
 const Rating = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <CssStyle>
         <div className="rating">
           <div className="container">
-            <h2 className="rating_name">Bizning kompaniyada</h2>
+            <h2 className="rating_name">{t("Rating.rating_name")}</h2>
             <div className="rating_tatil">
               <div className="rating_list">
                 <h3 className="rating_number">
@@ -16,7 +18,7 @@ const Rating = () => {
                   </span>{" "}
                   +
                 </h3>
-                <p className="rating_text">Xodimlar soni</p>
+                <p className="rating_text">{t("Rating.rating_text")}</p>
               </div>
               <div className="rating_list">
                 <h3 className="rating_number">
@@ -26,7 +28,7 @@ const Rating = () => {
                   </span>{" "}
                   +
                 </h3>
-                <p className="rating_text">Ob'ektlar</p>
+                <p className="rating_text">{t("Rating.rating_text1")}</p>
               </div>
               <div className="rating_list">
                 <h3 className="rating_number">
@@ -36,7 +38,7 @@ const Rating = () => {
                   </span>{" "}
                   +
                 </h3>
-                <p className="rating_text">Maxsus jihozlar</p>
+                <p className="rating_text">{t("Rating.rating_text2")}</p>
               </div>
               <div className="rating_list">
                 <h3 className="rating_number">
@@ -46,7 +48,7 @@ const Rating = () => {
                   </span>{" "}
                   +
                 </h3>
-                <p className="rating_text">bozorda 14 yil</p>
+                <p className="rating_text">{t("Rating.rating_text3")}</p>
               </div>
             </div>
           </div>

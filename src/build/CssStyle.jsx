@@ -1,3 +1,4 @@
+import { hover } from "@testing-library/user-event/dist/hover";
 import styled from "styled-components";
 export const CssStyle = styled.div`
   & .homepage {
@@ -306,8 +307,8 @@ export const CssStyle = styled.div`
             padding: 15px;
             transition: all 0.3s ease-in-out;
             & .projectm_info {
-              /* transform: translateY(200px);
-              transition: all 0.5s ease-in-out; */
+              transform: translateY(230px);
+              transition: all 0.5s ease-in-out;
               & .projectm_cards_title {
                 color: #fff;
                 font-family: SF Pro, sans-serif;
@@ -347,8 +348,8 @@ export const CssStyle = styled.div`
             padding: 15px;
             transition: all 0.3s ease-in-out;
             & .projectm_info {
-              /* transform: translateY(200px);
-              transition: all 0.5s ease-in-out; */
+              transform: translateY(230px);
+              transition: all 0.5s ease-in-out;
               & .projectm_cards_title {
                 color: #fff;
                 font-family: SF Pro, sans-serif;
@@ -388,8 +389,8 @@ export const CssStyle = styled.div`
             padding: 15px;
             transition: all 0.3s ease-in-out;
             & .projectm_info {
-              /* transform: translateY(200px);
-              transition: all 0.5s ease-in-out; */
+              transform: translateY(230px);
+              transition: all 0.5s ease-in-out;
               & .projectm_cards_title {
                 color: #fff;
                 font-family: SF Pro, sans-serif;
@@ -429,8 +430,8 @@ export const CssStyle = styled.div`
             padding: 15px;
             transition: all 0.3s ease-in-out;
             & .projectm_info {
-              /* transform: translateY(200px);
-              transition: all 0.5s ease-in-out; */
+              transform: translateY(230px);
+              transition: all 0.5s ease-in-out;
               & .projectm_cards_title {
                 color: #fff;
                 font-family: SF Pro, sans-serif;
@@ -470,8 +471,8 @@ export const CssStyle = styled.div`
             padding: 15px;
             transition: all 0.3s ease-in-out;
             & .projectm_info {
-              /* transform: translateY(200px);
-              transition: all 0.5s ease-in-out; */
+              transform: translateY(230px);
+              transition: all 0.5s ease-in-out;
               & .projectm_cards_title {
                 color: #fff;
                 font-family: SF Pro, sans-serif;
@@ -511,8 +512,8 @@ export const CssStyle = styled.div`
             padding: 15px;
             transition: all 0.3s ease-in-out;
             & .projectm_info {
-              /* transform: translateY(200px);
-              transition: all 0.5s ease-in-out; */
+              transform: translateY(230px);
+              transition: all 0.5s ease-in-out;
               & .projectm_cards_title {
                 color: #fff;
                 font-family: SF Pro, sans-serif;
@@ -535,6 +536,11 @@ export const CssStyle = styled.div`
                 letter-spacing: 2px;
                 /* transition: all 0.5s ease-in-out; */
               }
+            }
+          }
+          &:hover {
+            .projectm_info {
+              transform: translateY(5px);
             }
           }
         }
