@@ -61,5 +61,12 @@
   "main": {
     "main_text": " Biz shunchaki loyihalar yaratmaymiz, yangi imkoniyatlar yaratamiz. Davlat miqyosidagi inshootlarni qurish orqali biz kelajakni quryapmiz. Biz atrof-muhit haqida qayg'uramiz: kompaniya binolar va infratuzilmani qurish va ulardan foydalanish bilan bog'liq ekologik jihatlar uchun to'liq javobgarlikni o'z zimmasiga oladi.",
     "main_btn": "Batafsil bilish"
+  },
+  "forms": {
+    "form_name": "Savol, taklif va murojaatlar bormi?",
+    "input": "Ismingiz",
+    "input1": "Telefon raqamingiz",
+    "input2": "Sizning xabaringiz...",
+    "input3": "Yuborish"
   }
 }

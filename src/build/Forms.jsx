@@ -1,12 +1,16 @@
+import { t } from "i18next";
 import { CssStyle } from "./CssStyle";
+import { useTranslation } from "react-i18next";
 
 const Forms = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <CssStyle>
         <div className="form" id="forms">
           <div className="container">
-            <h2 className="form_name">Savol, taklif va murojaatlar bormi?</h2>
+            <h2 className="form_name">{t("forms.form_name")}</h2>
             <form
               action=""
               class="form_list"
@@ -14,7 +18,7 @@ const Forms = () => {
               data-aos-duration="2000"
             >
               <input
-                placeholder="Ismingiz"
+                placeholder={t("forms.input")}
                 type="name"
                 id="name"
                 name="name"
@@ -22,7 +26,7 @@ const Forms = () => {
                 class="form_input"
               />
               <input
-                placeholder="Telefon raqamingiz"
+                placeholder={t("forms.input1")}
                 type="tel"
                 id="tel"
                 name="tel"
@@ -31,12 +35,12 @@ const Forms = () => {
                 class="form_input"
               />
               <textarea
-                placeholder="Sizning xabaringiz..."
+                placeholder={t("forms.input2")}
                 name="tel"
                 id="tel"
               ></textarea>
               <button type="submit" class="form_button">
-                Yuborish
+                {t("forms.input3")}
               </button>
             </form>
           </div>
