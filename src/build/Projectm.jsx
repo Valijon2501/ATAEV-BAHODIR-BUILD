@@ -1,57 +1,53 @@
+import { useTranslation } from "react-i18next";
 import { CssStyle } from "./CssStyle";
 
 const Projectm = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <CssStyle>
         <div className="projectm" id="project">
           <dir className="container">
-            <h2 className="projectm_name">Bizning loyihalarimiz</h2>
+            <h2 className="projectm_name">{t("projectm.projectm_name")}</h2>
             <div className="projectm_flex">
               <div className="projectm_cards">
                 <div className="img_a">
                   <div className="projectm_info">
-                    <h3 className="projectm_cards_title">Magic City</h3>
-                    <p className="projectm_cards_info">
-                      Bu keng ko'lamli ijtimoiy ahamiyatga ega loyiha.
-                      Toshkentdagi madaniy-ko'ngilochar klaster yangi diqqatga
-                      sazovor joylardan biridir.
-                    </p>
+                    <h3 className="projectm_cards_title">
+                      {t("projectm.title")}
+                    </h3>
+                    <p className="projectm_cards_info">{t("projectm.info")}</p>
                   </div>
                 </div>
               </div>
               <div className="projectm_cards">
                 <div className="img_ab">
                   <div className="projectm_info">
-                    <h3 className="projectm_cards_title">Gardens Residence</h3>
-                    <p className="projectm_cards_info">
-                      O'zbekiston aholisiga qulaylik yaratish maqsadida
-                      yaratilgan ko'p funksiyali turar-joy majmuasi.
-                    </p>
+                    <h3 className="projectm_cards_title">
+                      {t("projectm.title1")}
+                    </h3>
+                    <p className="projectm_cards_info">{t("projectm.info1")}</p>
                   </div>
                 </div>
               </div>
               <div className="projectm_cards">
                 <div className="img_abc">
                   <div className="projectm_info">
-                    <h3 className="projectm_cards_title">Fonon</h3>
-                    <p className="projectm_cards_info">
-                      Poytaxt markazidagi muhtasham turar-joy massivi.
-                    </p>
+                    <h3 className="projectm_cards_title">
+                      {t("projectm.title2")}
+                    </h3>
+                    <p className="projectm_cards_info">{t("projectm.info2")}</p>
                   </div>
                 </div>
               </div>
               <div className="projectm_cards">
                 <div className="img_abcd">
                   <div className="projectm_info">
-                    <h3 className="projectm_cards_title">Invento</h3>
-                    <p className="projectm_cards_info">
-                      Fonon - O'zbekistonda 2020 yilda italyan zavodlari
-                      negizida qurilgan zargarlik buyumlari ishlab chiqarish
-                      zavodi. Fonon - Markaziy Osiyoda Yevropa va Sharq uslubida
-                      qimmatbaho metallardan zargarlik buyumlari ishlab
-                      chiqaradigan yagona yirik korxona
-                    </p>
+                    <h3 className="projectm_cards_title">
+                      {t("projectm.title3")}
+                    </h3>
+                    <p className="projectm_cards_info">{t("projectm.info3")}</p>
                   </div>
                 </div>
               </div>
@@ -59,22 +55,19 @@ const Projectm = () => {
                 <div className="img_abcde">
                   <div className="projectm_info">
                     <h3 className="projectm_cards_title">
-                      Presidential School
+                      {t("projectm.title4")}
                     </h3>
-                    <p className="projectm_cards_info">
-                      Tashkent City xalqaro biznes markazida joylashgan xalqaro
-                      bolalar bog'chasi va maktabi.
-                    </p>
+                    <p className="projectm_cards_info">{t("projectm.info4")}</p>
                   </div>
                 </div>
               </div>
               <div className="projectm_cards">
                 <div className="img_abcdef">
                   <div className="projectm_info">
-                    <h3 className="projectm_cards_title">Boulevard</h3>
-                    <p className="projectm_cards_info">
-                      Bu xalqaro darajada bilim beradigan ta'lim muassasasi
-                    </p>
+                    <h3 className="projectm_cards_title">
+                      {t("projectm.title5")}
+                    </h3>
+                    <p className="projectm_cards_info">{t("projectm.info5")}</p>
                   </div>
                 </div>
               </div>

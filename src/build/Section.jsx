@@ -1,11 +1,14 @@
+import { useTranslation } from "react-i18next";
 import { CssStyle } from "./CssStyle";
 
 const Section = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <CssStyle>
         <div className="section">
-          <h2 className="section_name">Sizning orzuingizdagi uy</h2>
+          <h2 className="section_name">{t("section.section_name")}</h2>
           <div className="section_list">
             <img
               className="section_img"
