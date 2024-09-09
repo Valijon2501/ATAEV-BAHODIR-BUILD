@@ -56,7 +56,7 @@ const Header = () => {
                 </li>
                 <li className="navbar_item">
                   <div>
-                    <select name="Lng" id="lng" onChange={handleChange}>
+                    <select className="select" name="Lng" id="lng" onChange={handleChange}>
                       <option value="uz">Uzb</option>
                       <option value="en">Eng</option>
                       <option value="ru">Rus</option>

@@ -58,12 +58,20 @@ export const CssStyle = styled.div`
                 }
               }
             }
+            & .select {
+              background: none;
+              color: white;
+              border: none;
+              & option {
+                background-color: black;
+              }
+            }
           }
         }
       }
 
       & .header {
-        padding-top: 150px;
+        padding-top: 330px;
 
         & .header_name {
           color: #fff;
@@ -103,7 +111,7 @@ export const CssStyle = styled.div`
               /* cursor: pointer; */
               display: flex;
               font-family: SF Pro;
-              font-size: 14.7105px;
+              font-size: 13.7105px;
               font-style: normal;
               font-weight: 510;
               height: 40px;
@@ -873,6 +881,23 @@ export const CssStyle = styled.div`
                 font-style: normal;
                 line-height: 26px;
                 text-decoration: none;
+                &::after {
+                  content: "";
+                  width: 100%;
+                  height: 2px;
+                  background-color: #120707;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  border-radius: 2px;
+                  transform: scaleX(0);
+                  transition: all.5s;
+                }
+                &:hover {
+                  &::after {
+                    transform: scaleX(1);
+                  }
+                }
               }
             }
           }
