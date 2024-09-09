@@ -1,6 +1,10 @@
+import { t } from "i18next";
 import { CssStyle } from "./CssStyle";
+import { useTranslation } from "react-i18next";
 
 const Main = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <CssStyle>
@@ -17,16 +21,11 @@ const Main = () => {
                   ATAEV BAHODIR BUILD
                 </h2>
                 <p className="main_text" data-aos="fade-up">
-                  Biz shunchaki loyihalar yaratmaymiz, yangi imkoniyatlar
-                  yaratamiz. Davlat miqyosidagi inshootlarni qurish orqali biz
-                  kelajakni quryapmiz. Biz atrof-muhit haqida qayg'uramiz:
-                  kompaniya binolar va infratuzilmani qurish va ulardan
-                  foydalanish bilan bog'liq ekologik jihatlar uchun to'liq
-                  javobgarlikni o'z zimmasiga oladi.
+                  {t("main.main_text")}
                 </p>
                 <div className="main_item">
                   <a className="main_btn" href="/box_meetang">
-                    Batafsil bilish
+                    {t("main.main_btn")}
                   </a>
                 </div>
               </div>

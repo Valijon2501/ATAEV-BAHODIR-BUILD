@@ -56,5 +56,9 @@
   },
   "gallery": {
     "gallery_name": "Exchanging Ideas with Partners"
+  },
+  "main": {
+    "main_text": "We don't just create projects; we create new opportunities. By constructing state-scale facilities, we are building the future. We care about the environment: the company takes full responsibility for the ecological aspects related to the construction and use of buildings and infrastructure.",
+    "main_btn": "Learn More"
   }
 }
