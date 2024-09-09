@@ -1,11 +1,14 @@
+import { useTranslation } from "react-i18next";
 import { CssStyle } from "./CssStyle";
 
 const Gallery = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <CssStyle>
         <div className="gallery">
-          <h2 className="gallery_name">Hamkorlar bilan fikr almashish</h2>
+          <h2 className="gallery_name">{t("gallery.gallery_name")} </h2>
           <div className="gallery_list">
             <img
               className="gallery-img"
