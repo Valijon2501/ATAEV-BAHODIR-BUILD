@@ -22,7 +22,7 @@ const Forms = () => {
                 type="name"
                 id="name"
                 name="name"
-                required=""
+                required
                 class="form_input"
               />
               <input
@@ -31,7 +31,7 @@ const Forms = () => {
                 id="tel"
                 name="tel"
                 maxlength="14"
-                required=""
+                required
                 class="form_input"
               />
               <textarea
