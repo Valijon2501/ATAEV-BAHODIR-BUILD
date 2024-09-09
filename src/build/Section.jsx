@@ -7,7 +7,7 @@ const Section = () => {
   return (
     <>
       <CssStyle>
-        <div className="section">
+        <div className="section" id="section">
           <h2 className="section_name">{t("section.section_name")}</h2>
           <div className="section_list">
             <img

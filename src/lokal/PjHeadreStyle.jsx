@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const PjHeader = styled.div`
   & .navbar {
+    position: fixed;
     background: #222936;
     top: 0;
     width: 100%;
@@ -44,7 +45,7 @@ export const PjHeader = styled.div`
             width: 20px;
           }
           & .navbar_links {
-            color: #fff;
+            color: #fce8bd;
             list-style: none;
             display: block;
             padding-bottom: 5px;
@@ -76,6 +77,7 @@ export const PjHeader = styled.div`
   /* ==============meetang================= */
 
   & .meeting {
+    margin-top: 85px;
     background: #fff;
     padding: 70px 20px;
     & .container {

@@ -1,15 +1,8 @@
 import { CssStyle } from "./CssStyle";
 import React, { useState, useTransition } from "react";
-// import { Dropdown } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-// const tillar = [
-//   { name: "English", flag: "/image/usa.png" },
-//   { name: "Russian", flag: "/image/russia.png" },
-//   { name: "Uzbek", flag: "/image/uzbekistan.png" },
-// ];
 
 const Header = () => {
-  // const [tanlangan, setTanlangan] = useState("English");
   const { t, i18n } = useTranslation();
 
   const handleChange = (event) => {
@@ -21,7 +14,7 @@ const Header = () => {
       <CssStyle>
         <div className="homepage">
           <div className="container">
-            <div className="navbar">
+            <div className="navbar" id="navbar">
               <ul className="navbar_listr">
                 <li className="navbar_item">
                   <a className="navbar_links" href="">
@@ -68,35 +61,6 @@ const Header = () => {
                       <option value="en">Eng</option>
                       <option value="ru">Rus</option>
                     </select>
-
-                    {/* <Dropdown>
-                      <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        <img
-                          src={
-                            tillar.find((item) => item.name === tanlangan).flag
-                          }
-                          alt="Flag"
-                          className="flag-icon"
-                        />
-                        {tanlangan}
-                      </Dropdown.Toggle>
-
-                      <Dropdown.Menu>
-                        {tillar.map((til) => (
-                          <Dropdown.Item
-                            key={til.name}
-                            onClick={() => handleLanguageChange(til)}
-                          >
-                            <img
-                              src={til.flag}
-                              alt="Flag"
-                              className="flag-icon"
-                            />
-                            <span>{til.name}</span>
-                          </Dropdown.Item>
-                        ))}
-                      </Dropdown.Menu>
-                    </Dropdown> */}
                   </div>
                 </li>
               </ul>

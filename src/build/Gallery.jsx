@@ -7,7 +7,7 @@ const Gallery = () => {
   return (
     <>
       <CssStyle>
-        <div className="gallery">
+        <div className="gallery" id="gallery">
           <h2 className="gallery_name">{t("gallery.gallery_name")} </h2>
           <div className="gallery_list">
             <img

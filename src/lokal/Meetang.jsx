@@ -2,8 +2,11 @@ import React from "react";
 import Footer from "../build/Footer";
 import ProjectsHeader from "./ProjectsHeader";
 import { PjHeader } from "./PjHeadreStyle";
+import { useTranslation } from "react-i18next";
 
 const Meetang = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <ProjectsHeader />
@@ -13,18 +16,11 @@ const Meetang = () => {
             <h3 className="meeting_mane">ATAEV BAHODIR BUILD haqida</h3>
             <p className="meeting_title">
               <a className="meeting_link" href="/">
-                Bosh sahifa
+                {t("meeting.meeting_link")}
               </a>
             </p>
             <div className="meeting_page">
-              <p className="meeting_text">
-                Biz shunchaki loyihalar yaratmaymiz, yangi imkoniyatlar
-                yaratamiz. Davlat miqyosidagi inshootlarni qurish orqali biz
-                kelajakni quryapmiz. Biz atrof-muhit haqida qayg'uramiz:
-                kompaniya binolar va infratuzilmani qurish va ulardan
-                foydalanish bilan bog'liq ekologik jihatlar uchun to'liq
-                javobgarlikni o'z zimmasiga oladi.
-              </p>
+              <p className="meeting_text">{t("meeting.meeting_text")}</p>
               <div className="meeting_left">
                 <img
                   className="meeting_icons"

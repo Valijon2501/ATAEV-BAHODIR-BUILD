@@ -1,14 +1,14 @@
 import { PjHeader } from "./PjHeadreStyle";
 import React, { useState } from "react";
 import { Dropdown } from "react-bootstrap";
-const tillar = [
-  { name: "English", flag: "/image/usa.png" },
-  { name: "Russian", flag: "/image/russia.png" },
-  { name: "Uzbek", flag: "/image/uzbekistan.png" },
-];
+import { useTranslation } from "react-i18next";
 
 const ProjectsHeader = () => {
-  const [tanlangan, setTanlangan] = useState("English");
+  const { t, i18n } = useTranslation();
+  const handleChange = (event) => {
+    const selectedLaungage = event.target.value;
+    i18n.changeLanguage(selectedLaungage); // Change the app language
+  };
 
   return (
     <>
@@ -18,17 +18,17 @@ const ProjectsHeader = () => {
             <ul className="navbar_listr">
               <li className="navbar_item">
                 <a className="navbar_links" href="">
-                  Ma'lumotlar
+                  {t("header.Ma'lumotlar")}
                 </a>
               </li>
               <li className="navbar_item">
                 <a className="navbar_links" href="">
-                  Biz haqimizda
+                {t("header.Biz haqimizda")}
                 </a>
               </li>
               <li className="navbar_item">
                 <a className="navbar_links" href="">
-                  Korxonalar
+                {t("header.Korxonalar")}
                 </a>
               </li>
               <li className="navbar_item">
@@ -41,45 +41,28 @@ const ProjectsHeader = () => {
               </li>
               <li className="navbar_item">
                 <a className="navbar_links" href="">
-                  Afzalliklarimiz
+                {t("header.Afzalliklarimiz")}
                 </a>
               </li>
               <li className="navbar_item">
                 <a className="navbar_links" href="">
-                  Yangiliklar
+                {t("header.Yangiliklar")}
                 </a>
               </li>
               <li className="navbar_item">
                 <a className="navbar_links" href="">
-                  Aloqa
+                {t("header.Aloqa")} 
                 </a>
               </li>
               <li className="navbar_item">
                 {/* <a className="navbar_links" href="">
                   Ma'lumotlar
                 </a> */}
-                <Dropdown>
-                  <Dropdown.Toggle variant="success" id="dropdown-basic">
-                    <img
-                      src={tillar.find((item) => item.name === tanlangan).flag}
-                      alt="Flag"
-                      className="flag-icon"
-                    />
-                    {tanlangan}
-                  </Dropdown.Toggle>
-
-                  <Dropdown.Menu>
-                    {tillar.map((til) => (
-                      <Dropdown.Item
-                        key={til.name}
-                        onClick={() => setTanlangan(til.name)}
-                      >
-                        <img src={til.flag} alt="Flag" className="flag-icon" />
-                        <span>{til.name}</span>
-                      </Dropdown.Item>
-                    ))}
-                  </Dropdown.Menu>
-                </Dropdown>
+                <select name="Lng" id="lng" onChange={handleChange}>
+                  <option value="uz">Uzb</option>
+                  <option value="en">Eng</option>
+                  <option value="ru">Rus</option>
+                </select>
               </li>
             </ul>
           </div>

@@ -68,5 +68,19 @@
     "input1": "Telefon raqamingiz",
     "input2": "Sizning xabaringiz...",
     "input3": "Yuborish"
+  },
+  "footer": {
+    "footer_texts": "Ijtimoiy tarmoqlarimizga obuna bo'ling",
+    "footer_name": "Kompaniyamiz",
+    "footer_link": "Korxonalar",
+    "footer_link1": "Biz haqimizda",
+    "footer_link2": "Yangiliklar",
+    "footer_link3": "Bizning loyihalarimiz",
+    "footer_link4": "Aloqa"
+  },
+  "meeting": {
+    "meeting_link": "Bosh sahifa",
+    "meeting_text": "Biz shunchaki loyihalar yaratmaymiz, yangi imkoniyatlar yaratamiz. Davlat miqyosidagi inshootlarni qurish orqali biz kelajakni quryapmiz. Biz atrof-muhit haqida qayg'uramiz: kompaniya binolar va infratuzilmani qurish va ulardan foydalanish bilan bog'liq ekologik jihatlar uchun to'liq javobgarlikni o'z zimmasiga oladi."
   }
+  
 }

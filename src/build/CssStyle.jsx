@@ -14,6 +14,7 @@ export const CssStyle = styled.div`
       padding: 0 15px;
       width: 100%;
       & .navbar {
+        position: fixed;
         & .navbar_listr {
           align-items: center;
           display: flex;

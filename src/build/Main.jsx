@@ -20,7 +20,11 @@ const Main = () => {
                 >
                   ATAEV BAHODIR BUILD
                 </h2>
-                <p className="main_text" data-aos="fade-up">
+                <p
+                  className="main_text"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   {t("main.main_text")}
                 </p>
                 <div className="main_item">
