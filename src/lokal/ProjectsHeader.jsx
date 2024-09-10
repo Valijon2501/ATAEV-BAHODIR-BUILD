@@ -23,12 +23,12 @@ const ProjectsHeader = () => {
               </li>
               <li className="navbar_item">
                 <a className="navbar_links" href="">
-                {t("header.Biz haqimizda")}
+                  {t("header.Biz haqimizda")}
                 </a>
               </li>
               <li className="navbar_item">
                 <a className="navbar_links" href="">
-                {t("header.Korxonalar")}
+                  {t("header.Korxonalar")}
                 </a>
               </li>
               <li className="navbar_item">
@@ -41,24 +41,21 @@ const ProjectsHeader = () => {
               </li>
               <li className="navbar_item">
                 <a className="navbar_links" href="">
-                {t("header.Afzalliklarimiz")}
+                  {t("header.Afzalliklarimiz")}
                 </a>
               </li>
               <li className="navbar_item">
                 <a className="navbar_links" href="">
-                {t("header.Yangiliklar")}
+                  {t("header.Yangiliklar")}
                 </a>
               </li>
               <li className="navbar_item">
                 <a className="navbar_links" href="">
-                {t("header.Aloqa")} 
+                  {t("header.Aloqa")}
                 </a>
               </li>
               <li className="navbar_item">
-                {/* <a className="navbar_links" href="">
-                  Ma'lumotlar
-                </a> */}
-                <select name="Lng" id="lng" onChange={handleChange}>
+                <select className="select" name="Lng" id="lng" onChange={handleChange}>
                   <option value="uz">Uzb</option>
                   <option value="en">Eng</option>
                   <option value="ru">Rus</option>

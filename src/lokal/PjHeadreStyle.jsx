@@ -5,6 +5,7 @@ export const PjHeader = styled.div`
     background: #222936;
     top: 0;
     width: 100%;
+    z-index: 1;
     & .container {
       margin: 0 auto;
       max-width: 1140px;
@@ -35,6 +36,14 @@ export const PjHeader = styled.div`
         } */
         & .navbar_item {
           margin: 0 20px;
+          & .select {
+            background: none;
+            color: rgb(252, 232, 189);
+            border: none;
+            & option {
+              background-color: black;
+            }
+          }
           & .navbar_links_navbar_name {
             & img {
               width: 120px;

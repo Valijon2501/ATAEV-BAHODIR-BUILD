@@ -1,5 +1,5 @@
 import { CssStyle } from "./CssStyle";
-import React, { useState, useTransition } from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
@@ -9,12 +9,31 @@ const Header = () => {
     const selectedLaungage = event.target.value;
     i18n.changeLanguage(selectedLaungage); // Change the app language
   };
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.getElementById("navbar");
+      if (window.scrollY > 0) {
+        header.classList.add("bg-gray-800");
+        header.classList.remove("bg-transparent");
+      } else {
+        header.classList.add("bg-transparent");
+        header.classList.remove("bg-gray-800");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener when component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <CssStyle>
         <div className="homepage">
-          <div className="container">
-            <div className="navbar" id="navbar">
+          <div className="navbar" id="navbar">
+            <div className="container">
               <ul className="navbar_listr">
                 <li className="navbar_item">
                   <a className="navbar_links" href="">
@@ -56,7 +75,12 @@ const Header = () => {
                 </li>
                 <li className="navbar_item">
                   <div>
-                    <select className="select" name="Lng" id="lng" onChange={handleChange}>
+                    <select
+                      className="select"
+                      name="Lng"
+                      id="lng"
+                      onChange={handleChange}
+                    >
                       <option value="uz">Uzb</option>
                       <option value="en">Eng</option>
                       <option value="ru">Rus</option>
@@ -65,7 +89,8 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-
+          </div>
+          <div className="container">
             <div className="header">
               <h2 className="header_name">
                 ATAEV

@@ -6,15 +6,23 @@ export const CssStyle = styled.div`
     height: 100%;
     width: 100%;
     background-size: cover;
+
     & .homepage_img {
     }
-    & .container {
+
+    & .navbar {
+      position: fixed;
       margin: 0 auto;
-      max-width: 1140px;
+      z-index: 1;
+      /* max-width: 1140px; */
       padding: 0 15px;
       width: 100%;
-      & .navbar {
-        position: fixed;
+
+      & .container {
+        margin: 0 auto;
+        max-width: 1140px;
+        padding: 0 15px;
+        width: 100%;
         & .navbar_listr {
           align-items: center;
           display: flex;
@@ -58,6 +66,7 @@ export const CssStyle = styled.div`
                 }
               }
             }
+
             & .select {
               background: none;
               color: white;
@@ -69,7 +78,23 @@ export const CssStyle = styled.div`
           }
         }
       }
+    }
+    .bg-transparent {
+      background-color: transparent;
+      transition: background-color 0.5s ease-in-out;
+    }
 
+    /* Qorong'i kulrang fon uchun */
+    .bg-gray-800 {
+      background: rgb(252, 232, 189); /* Bu Tailwind'dagi gray-800 rang */
+      color: black;
+      transition: background-color 0.5s ease-in-out;
+    }
+    & .container {
+      margin: 0 auto;
+      max-width: 1140px;
+      padding: 0 15px;
+      width: 100%;
       & .header {
         padding-top: 330px;
 
