@@ -12,12 +12,26 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const header = document.getElementById("navbar");
+      const links = document.querySelectorAll(".navbar_links"); // barcha linklarni olish
+
       if (window.scrollY > 0) {
         header.classList.add("bg-gray-800");
         header.classList.remove("bg-transparent");
+
+        // Text rangini qoraytirish
+        links.forEach((link) => {
+          link.classList.add("text-dark");
+          link.classList.remove("text-light");
+        });
       } else {
         header.classList.add("bg-transparent");
         header.classList.remove("bg-gray-800");
+
+        // Text rangini ochiq rangga o'zgartirish
+        links.forEach((link) => {
+          link.classList.add("text-light");
+          link.classList.remove("text-dark");
+        });
       }
     };
 
@@ -28,6 +42,7 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <>
       <CssStyle>
@@ -76,7 +91,7 @@ const Header = () => {
                 <li className="navbar_item">
                   <div>
                     <select
-                      className="select"
+                      className="navbar_links"
                       name="Lng"
                       id="lng"
                       onChange={handleChange}
@@ -105,7 +120,7 @@ const Header = () => {
                   </a>
                 </div>
                 <div className="header_title">
-                  <a href="tel:+998974839999" class="header_btn">
+                  <a href="https://T.me/+998885222501" class="header_btn">
                     {t("header.Bog'lanish")}
                   </a>
                 </div>
