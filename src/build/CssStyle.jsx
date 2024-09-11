@@ -11,6 +11,7 @@ export const CssStyle = styled.div`
     }
 
     & .navbar {
+      display: none;
       position: fixed;
       margin: 0 auto;
       z-index: 1;
@@ -95,6 +96,14 @@ export const CssStyle = styled.div`
               }
             }
           }
+          /* Logoni qoraytirish */
+          .logo-light img {
+            filter: brightness(1); /* Ochiq rang */
+          }
+
+          .logo-dark img {
+            filter: brightness(0.5); /* Qorong'i rang */
+          }
         }
       }
     }
@@ -108,6 +117,37 @@ export const CssStyle = styled.div`
       background: rgb(252, 232, 189); /* Bu Tailwind'dagi gray-800 rang */
       color: black;
       transition: background-color 0.5s ease-in-out;
+    }
+
+    /* =======================mobile========================== */
+    & .nav_mobile {
+      background: rgba(44, 52, 66, 0.9);
+      padding: 30px 30px 25px 15px;
+      & .container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        & .nav_mobile_btn {
+          background-color: initial;
+          border: none;
+          width: 45px;
+          & img {
+            width: 35px;
+          }
+        }
+        & .nav_link_name {
+          text-decoration: none;
+          & img {
+            width: 120px;
+          }
+        }
+        & .nav_mogile_link {
+          text-decoration: none;
+          & img {
+            width: 35px;
+          }
+        }
+      }
     }
     & .container {
       margin: 0 auto;
@@ -985,10 +1025,18 @@ export const CssStyle = styled.div`
   & .form {
     background: #202733;
     padding: 138px 208px;
+    @media (max-width: 950px) {
+      padding: 21% 12%;
+    }
     & .form_img {
       background: url(./image/form.03148b23e27804568a88.png);
       background-size: 100% 100%;
       padding-bottom: 58px;
+      @media (max-width: 950px) {
+        border-radius: 13px;
+        background-size: cover;
+        background-position: center;
+      }
 
       & .container {
         margin: 0 auto;
@@ -1009,6 +1057,11 @@ export const CssStyle = styled.div`
           width: 300px;
           @media (max-width: 1000px) {
             width: 100%;
+            @media (max-width: 800px) {
+              font-size: 22px;
+              text-align: center;
+              padding-left: 0px;
+            }
           }
         }
         & .form_list {

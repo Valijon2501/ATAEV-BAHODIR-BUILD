@@ -6,13 +6,15 @@ const Header = () => {
   const { t, i18n } = useTranslation();
 
   const handleChange = (event) => {
-    const selectedLaungage = event.target.value;
-    i18n.changeLanguage(selectedLaungage); // Change the app language
+    const selectedLanguage = event.target.value;
+    i18n.changeLanguage(selectedLanguage); // Change the app language
   };
+
   useEffect(() => {
     const handleScroll = () => {
       const header = document.getElementById("navbar");
       const links = document.querySelectorAll(".navbar_links"); // barcha linklarni olish
+      const logo = document.querySelector(".navbar_links_navbar_name"); // logoni olish
 
       if (window.scrollY > 0) {
         header.classList.add("bg-gray-800");
@@ -23,6 +25,12 @@ const Header = () => {
           link.classList.add("text-dark");
           link.classList.remove("text-light");
         });
+
+        // Logoni qoraytirish
+        if (logo) {
+          logo.classList.add("logo-dark");
+          logo.classList.remove("logo-light");
+        }
       } else {
         header.classList.add("bg-transparent");
         header.classList.remove("bg-gray-800");
@@ -32,6 +40,12 @@ const Header = () => {
           link.classList.add("text-light");
           link.classList.remove("text-dark");
         });
+
+        // Logoni och rangga o'zgartirish
+        if (logo) {
+          logo.classList.add("logo-light");
+          logo.classList.remove("logo-dark");
+        }
       }
     };
 
@@ -105,6 +119,30 @@ const Header = () => {
               </ul>
             </div>
           </div>
+          {/* ======mobil====== */}
+          <div className="nav_mobile">
+            <div className="container">
+              <button className="nav_mobile_btn">
+                <img
+                  className="navbar_logo"
+                  src="./image/Без названия2.png"
+                  alt=""
+                />
+              </button>
+              <a className="nav_link_name" href="/">
+                <img src="./image/ataev1.a8abd3c374603900fb01.png" alt="" />
+              </a>
+              <a className="nav_mogile_link" href="tel:+998974839999">
+                <img
+                  className="navbar_icon"
+                  src="./image/Без названия1.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          {/* ======== */}
+          
           <div className="container">
             <div className="header">
               <h2 className="header_name">
