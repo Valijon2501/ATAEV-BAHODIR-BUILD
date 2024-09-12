@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 
 const ProjectsHeader = () => {
   const { t, i18n } = useTranslation();
+  const laungages = localStorage.getItem("i18nextLng");
+
   const handleChange = (event) => {
     const selectedLaungage = event.target.value;
     i18n.changeLanguage(selectedLaungage);
@@ -64,6 +66,7 @@ const ProjectsHeader = () => {
                   className="select"
                   name="Lng"
                   id="lng"
+                  value={laungages}
                   onChange={handleChange}
                 >
                   <option value="uz">Uzb</option>

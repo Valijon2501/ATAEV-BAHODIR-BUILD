@@ -187,6 +187,7 @@ const Header = () => {
                       class="nav__langs"
                       name="Lng"
                       id="lng"
+                      value={laungages}
                       onChange={handleChange}
                     >
                       <option value="uz">uz</option>
