@@ -11,16 +11,17 @@ export const CssStyle = styled.div`
     }
 
     & .navbar {
-      display: none;
       position: fixed;
       margin: 0 auto;
       z-index: 1;
-      /* max-width: 1140px; */
       padding: 0 15px;
       width: 100%;
       @media (max-width: 1440px) {
         .container {
           width: 100%;
+        }
+        @media (max-width: 860px) {
+          display: none;
         }
       }
 
@@ -96,13 +97,12 @@ export const CssStyle = styled.div`
               }
             }
           }
-          /* Logoni qoraytirish */
           .logo-light img {
-            filter: brightness(1); /* Ochiq rang */
+            filter: brightness(1);
           }
 
           .logo-dark img {
-            filter: brightness(0.5); /* Qorong'i rang */
+            filter: brightness(0.5);
           }
         }
       }
@@ -112,9 +112,8 @@ export const CssStyle = styled.div`
       transition: background-color 0.5s ease-in-out;
     }
 
-    /* Qorong'i kulrang fon uchun */
     .bg-gray-800 {
-      background: rgb(252, 232, 189); /* Bu Tailwind'dagi gray-800 rang */
+      background: rgb(252, 232, 189);
       color: black;
       transition: background-color 0.5s ease-in-out;
     }
@@ -123,6 +122,10 @@ export const CssStyle = styled.div`
     & .nav_mobile {
       background: rgba(44, 52, 66, 0.9);
       padding: 30px 30px 25px 15px;
+      display: none;
+      @media (max-width: 860px) {
+        display: flex;
+      }
       & .container {
         align-items: center;
         display: flex;
@@ -149,6 +152,68 @@ export const CssStyle = styled.div`
         }
       }
     }
+    /* ======================================================modal */
+    & .nav_modalContainer_nav_show {
+      align-items: center;
+      backdrop-filter: blur(18px);
+      background-color: rgba(0, 0, 0, 0.5);
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      left: 0;
+      position: fixed;
+      top: 0;
+      z-index: 100;
+      & .nav_modal_content {
+        background: #fce8bd;
+        height: 100vh;
+        width: 250px;
+        & .navbar_close {
+          align-items: center;
+          background: #f5e1b2;
+          border: none;
+          border-radius: 50%;
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          height: 32px;
+          justify-content: center;
+          left: 85%;
+          position: relative;
+          top: 3%;
+          width: 32px;
+        }
+        & .navbar_modal_list {
+          list-style: none;
+          margin-top: 35px;
+          & .navbar_modal_item {
+            margin: 10px 0;
+            & .navbar_modal_link {
+              color: #000;
+              font-family: SF Pro;
+              font-size: 15.1852px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 18px;
+              text-decoration: none;
+            }
+            & .nav__langs {
+              align-items: center;
+              display: flex;
+              margin-left: -10px;
+              & p {
+                color: #000;
+                font-size: 18px;
+                font-weight: 600;
+                margin: 10px;
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+      }
+    }
+
     & .container {
       margin: 0 auto;
       max-width: 1140px;
@@ -173,7 +238,6 @@ export const CssStyle = styled.div`
           letter-spacing: 0.045em;
           font-size: 5.35rem;
           font-weight: 700;
-          /* line-height: 30px; */
           @media (max-width: 1240px) {
             font-size: 4.35rem;
             @media (max-width: 600px) {
@@ -210,7 +274,6 @@ export const CssStyle = styled.div`
               border: 2px solid #fff;
               border-radius: 20px;
               color: #fff;
-              /* cursor: pointer; */
               display: flex;
               font-family: SF Pro;
               font-size: 13.7105px;
@@ -330,7 +393,6 @@ export const CssStyle = styled.div`
             font-size: 20px;
             font-weight: 400;
             padding-left: 25px;
-            /* padding-top: 50px; */
             font-family: SF Pro;
             font-style: normal;
             line-height: 136.6%;
@@ -357,9 +419,7 @@ export const CssStyle = styled.div`
     margin-top: -25px;
     padding-bottom: 135px;
     padding-top: 85px;
-    /* @media (max-width: 700px) {
-      background-size: auto;
-    } */
+
     & .container {
       margin: 0 auto;
       max-width: 1140px;
@@ -527,7 +587,6 @@ export const CssStyle = styled.div`
                 font-family: SF Pro, sans-serif;
                 font-weight: 500;
                 letter-spacing: 2px;
-                /* transition: all 0.5s ease-in-out; */
                 font-size: 26px;
                 line-height: 34px;
                 margin-bottom: 20px;
@@ -540,12 +599,10 @@ export const CssStyle = styled.div`
                 height: 200px;
                 line-height: 24px;
                 margin-bottom: 10px;
-                /* opacity: 0; */
                 color: #fff;
                 font-family: SF Pro, sans-serif;
                 font-weight: 500;
                 letter-spacing: 2px;
-                /* transition: all 0.5s ease-in-out; */
                 @media (max-width: 550px) {
                   font-size: 15px;
                 }
@@ -574,7 +631,6 @@ export const CssStyle = styled.div`
                 font-family: SF Pro, sans-serif;
                 font-weight: 500;
                 letter-spacing: 2px;
-                /* transition: all 0.5s ease-in-out; */
                 font-size: 26px;
                 line-height: 34px;
                 margin-bottom: 20px;
@@ -587,12 +643,10 @@ export const CssStyle = styled.div`
                 height: 200px;
                 line-height: 24px;
                 margin-bottom: 10px;
-                /* opacity: 0; */
                 color: #fff;
                 font-family: SF Pro, sans-serif;
                 font-weight: 500;
                 letter-spacing: 2px;
-                /* transition: all 0.5s ease-in-out; */
                 @media (max-width: 550px) {
                   font-size: 15px;
                 }
@@ -621,7 +675,6 @@ export const CssStyle = styled.div`
                 font-family: SF Pro, sans-serif;
                 font-weight: 500;
                 letter-spacing: 2px;
-                /* transition: all 0.5s ease-in-out; */
                 font-size: 26px;
                 line-height: 34px;
                 margin-bottom: 20px;
@@ -634,12 +687,10 @@ export const CssStyle = styled.div`
                 height: 200px;
                 line-height: 24px;
                 margin-bottom: 10px;
-                /* opacity: 0; */
                 color: #fff;
                 font-family: SF Pro, sans-serif;
                 font-weight: 500;
                 letter-spacing: 2px;
-                /* transition: all 0.5s ease-in-out; */
                 @media (max-width: 550px) {
                   font-size: 15px;
                 }
@@ -668,7 +719,6 @@ export const CssStyle = styled.div`
                 font-family: SF Pro, sans-serif;
                 font-weight: 500;
                 letter-spacing: 2px;
-                /* transition: all 0.5s ease-in-out; */
                 font-size: 26px;
                 line-height: 34px;
                 margin-bottom: 20px;
@@ -681,12 +731,10 @@ export const CssStyle = styled.div`
                 height: 200px;
                 line-height: 24px;
                 margin-bottom: 10px;
-                /* opacity: 0; */
                 color: #fff;
                 font-family: SF Pro, sans-serif;
                 font-weight: 500;
                 letter-spacing: 2px;
-                /* transition: all 0.5s ease-in-out; */
                 @media (max-width: 550px) {
                   font-size: 15px;
                 }
@@ -715,7 +763,6 @@ export const CssStyle = styled.div`
                 font-family: SF Pro, sans-serif;
                 font-weight: 500;
                 letter-spacing: 2px;
-                /* transition: all 0.5s ease-in-out; */
                 font-size: 26px;
                 line-height: 34px;
                 margin-bottom: 20px;
@@ -728,12 +775,10 @@ export const CssStyle = styled.div`
                 height: 200px;
                 line-height: 24px;
                 margin-bottom: 10px;
-                /* opacity: 0; */
                 color: #fff;
                 font-family: SF Pro, sans-serif;
                 font-weight: 500;
                 letter-spacing: 2px;
-                /* transition: all 0.5s ease-in-out; */
                 @media (max-width: 550px) {
                   font-size: 15px;
                 }
@@ -763,7 +808,6 @@ export const CssStyle = styled.div`
                 font-family: SF Pro, sans-serif;
                 font-weight: 500;
                 letter-spacing: 2px;
-                /* transition: all 0.5s ease-in-out; */
                 font-size: 26px;
                 line-height: 34px;
                 margin-bottom: 20px;
@@ -776,12 +820,10 @@ export const CssStyle = styled.div`
                 height: 200px;
                 line-height: 24px;
                 margin-bottom: 10px;
-                /* opacity: 0; */
                 color: #fff;
                 font-family: SF Pro, sans-serif;
                 font-weight: 500;
                 letter-spacing: 2px;
-                /* transition: all 0.5s ease-in-out; */
                 @media (max-width: 550px) {
                   font-size: 15px;
                 }

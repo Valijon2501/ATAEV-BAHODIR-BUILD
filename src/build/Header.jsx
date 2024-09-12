@@ -1,32 +1,31 @@
 import { CssStyle } from "./CssStyle";
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
+  const laungages = localStorage.getItem("i18nextLng");
 
   const handleChange = (event) => {
     const selectedLanguage = event.target.value;
-    i18n.changeLanguage(selectedLanguage); // Change the app language
+    i18n.changeLanguage(selectedLanguage);
   };
 
   useEffect(() => {
     const handleScroll = () => {
       const header = document.getElementById("navbar");
-      const links = document.querySelectorAll(".navbar_links"); // barcha linklarni olish
-      const logo = document.querySelector(".navbar_links_navbar_name"); // logoni olish
+      const links = document.querySelectorAll(".navbar_links");
+      const logo = document.querySelector(".navbar_links_navbar_name ");
 
       if (window.scrollY > 0) {
         header.classList.add("bg-gray-800");
         header.classList.remove("bg-transparent");
 
-        // Text rangini qoraytirish
         links.forEach((link) => {
           link.classList.add("text-dark");
           link.classList.remove("text-light");
         });
 
-        // Logoni qoraytirish
         if (logo) {
           logo.classList.add("logo-dark");
           logo.classList.remove("logo-light");
@@ -35,13 +34,11 @@ const Header = () => {
         header.classList.add("bg-transparent");
         header.classList.remove("bg-gray-800");
 
-        // Text rangini ochiq rangga o'zgartirish
         links.forEach((link) => {
           link.classList.add("text-light");
           link.classList.remove("text-dark");
         });
 
-        // Logoni och rangga o'zgartirish
         if (logo) {
           logo.classList.add("logo-light");
           logo.classList.remove("logo-dark");
@@ -51,11 +48,16 @@ const Header = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup the event listener when component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
 
   return (
     <>
@@ -108,6 +110,7 @@ const Header = () => {
                       className="navbar_links"
                       name="Lng"
                       id="lng"
+                      value={laungages}
                       onChange={handleChange}
                     >
                       <option value="uz">Uzb</option>
@@ -122,7 +125,7 @@ const Header = () => {
           {/* ======mobil====== */}
           <div className="nav_mobile">
             <div className="container">
-              <button className="nav_mobile_btn">
+              <button className="nav_mobile_btn" onClick={toggleModal}>
                 <img
                   className="navbar_logo"
                   src="./image/Без названия2.png"
@@ -141,8 +144,62 @@ const Header = () => {
               </a>
             </div>
           </div>
-          {/* ======== */}
-          
+          {/* ================================================ */}
+          {isModalOpen ? (
+            <div className={`nav_modalContainer_nav_show `}>
+              <div className="nav_modal_content">
+                <button className="navbar_close" onClick={toggleModal}>
+                  <img src="./image/Без названия3.png" alt="" />
+                </button>
+                <ul class="navbar_modal_list">
+                  <li class="navbar_modal_item">
+                    <a href="" class="navbar_modal_link">
+                      {t("header.Ma'lumotlar")}
+                    </a>
+                  </li>
+                  <li class="navbar_modal_item">
+                    <a href="#project" class="navbar_modal_link">
+                      {t("header.Biz haqimizda")}
+                    </a>
+                  </li>
+                  <li class="navbar_modal_item">
+                    <a href="#service" class="navbar_modal_link">
+                      {t("header.Korxonalar")}
+                    </a>
+                  </li>
+                  <li class="navbar_modal_item">
+                    <a href="#" class="navbar_modal_link">
+                      {t("header.Afzalliklarimiz")}
+                    </a>
+                  </li>
+                  <li class="navbar_modal_item">
+                    <a href="#forms" class="navbar_modal_link">
+                      {t("header.Aloqa")}
+                    </a>
+                  </li>
+                  <li class="navbar_modal_item">
+                    <a href="#card" class="navbar_modal_link">
+                      {t("header.Yangiliklar")}
+                    </a>
+                  </li>
+                  <li class="navbar_modal_item">
+                    <select
+                      class="nav__langs"
+                      name="Lng"
+                      id="lng"
+                      onChange={handleChange}
+                    >
+                      <option value="uz">uz</option>
+                      <option value="en">en</option>
+                      <option value="ru">ru</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          ) : (
+            ""
+          )}
           <div className="container">
             <div className="header">
               <h2 className="header_name">
@@ -158,7 +215,7 @@ const Header = () => {
                   </a>
                 </div>
                 <div className="header_title">
-                  <a href="https://T.me/+998885222501" class="header_btn">
+                  <a href="tel:+998974839999" class="header_btn">
                     {t("header.Bog'lanish")}
                   </a>
                 </div>

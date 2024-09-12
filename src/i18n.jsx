@@ -5,17 +5,16 @@ import laungageDetector from "i18next-browser-languagedetector";
 import uzTranslation from "./locales/uz.json";
 import enTranslation from "./locales/en.json";
 import ruTranslation from "./locales/ru.json";
-// import { init } from "aos";
+
+const laungage = localStorage.getItem("i18nextLng") || "uz";
 
 i18n
   .use(Backend)
-  // tilni aniqlash berish
   .use(laungageDetector)
-  //  bog'lash
   .use(initReactI18next)
   .init({
     fallbackLng: "en",
-    lng: "uz",
+    lng: laungage,
     debug: true,
     resources: {
       uz: { translation: uzTranslation },
