@@ -30,6 +30,7 @@ export const CssStyle = styled.div`
         max-width: 1140px;
         padding: 0 15px;
         width: 100%;
+        /* border: 1px solid red; */
         @media (max-width: 1440px) {
           .container {
             width: 100%;
@@ -228,6 +229,7 @@ export const CssStyle = styled.div`
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding-left: 0px;
           }
         }
 
@@ -242,8 +244,12 @@ export const CssStyle = styled.div`
             font-size: 4.35rem;
             @media (max-width: 600px) {
               text-align: center;
+              font-size: 3.35rem;
               @media (max-width: 430px) {
-                font-size: 3.35rem;
+                font-size: 2.35rem;
+                @media (max-width: 390px) {
+                  font-size: 2.35rem;
+                }
               }
             }
           }
@@ -256,6 +262,12 @@ export const CssStyle = styled.div`
           font-family: SF Pro;
           font-style: normal;
           letter-spacing: 0.045em;
+          @media (max-width: 430px) {
+            font-size: 18px;
+            @media (max-width: 390px) {
+              font-size: 16px;
+            }
+          }
         }
         & .header_modal {
           gap: 15px;
@@ -319,6 +331,8 @@ export const CssStyle = styled.div`
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        overflow: hidden;
+
         @media (max-width: 890px) {
           display: flex;
           flex-wrap: wrap;
@@ -563,6 +577,10 @@ export const CssStyle = styled.div`
           justify-content: center;
           gap: 20px;
           padding-left: 30px;
+          @media (max-width: 550px) {
+            grid-template-columns: repeat(1, minmax(420px, 99%));
+            padding-left: 60px;
+          }
         }
         & .projectm_cards {
           & .img_a {
@@ -870,6 +888,8 @@ export const CssStyle = styled.div`
         display: grid;
         gap: 40px;
         grid-template-columns: repeat(2, minmax(350px, 50%));
+        overflow: hidden;
+
         @media (max-width: 1000px) {
           display: grid;
           justify-content: center;
@@ -933,6 +953,15 @@ export const CssStyle = styled.div`
             margin: 14px 0px;
             @media (max-width: 1000px) {
               text-align: center;
+              width: 100%;
+              @media (max-width: 760px) {
+                font-size: 16px;
+                width: 100%;
+                @media (max-width: 650px) {
+                  font-size: 14px;
+                  width: 100%;
+                }
+              }
             }
           }
           & .cards_text {
@@ -944,6 +973,9 @@ export const CssStyle = styled.div`
             color: #000;
             font-family: SF Pro;
             font-style: normal;
+            @media (max-width: 760px) {
+              font-size: 10px;
+            }
           }
         }
       }
